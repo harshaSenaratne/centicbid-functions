@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "c315dbd8-cbf7-4849-b145-7535778bbe6a",
+		"name": "centicbids",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n   \"active\":true,\n    \"base_price\": 200,\n    \"current_bid\":100,\n    \"description\":\"Enjoy the fine mouldings of the golden maple beauty. Wisely added mirror reduces the hassle of sparing space for a separate mirror table. Consists of large shelves with a hanger bar, a lockable inside drawer and conveniently placed two external drawers.\",\n\n    \"image_path\":\"https://firebasestorage.googleapis.com/v0/b/centicbids-459e0.appspot.com/o/products%2F9bd119c6ed12f6f15dc5de6b3f505965.png?alt=media&token=ff56636d-a788-4cb8-bfe4-005edc8e44e3\",\n\n    \"name\":\"New Regent Wardrobe\" \n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-centicbids-459e0.cloudfunctions.net/addNewProduct",
+					"protocol": "https",
+					"host": [
+						"us-central1-centicbids-459e0",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"addNewProduct"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

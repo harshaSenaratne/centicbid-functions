@@ -18,8 +18,11 @@ To run the application locally
 npm run serve
 ```
 
+
+## Note : Every product has a default bidding timeout of 15mins 
+
+
+
 ## Add Product
 To add a product to the firestore, use ```https://us-central1-centicbids-459e0.cloudfunctions.net/addNewProduct
 ```  url. Please find the sample json file in the ```sample_json``` folder in the root folder.
-
-  

@@ -59,7 +59,7 @@ exports.addNewProduct = functions.https.onRequest(async (req, res) => {
   const id = Math.random().toString(36).substring(2)
   const created_dt_timestamp = new Date();
   //Bid time for a product is limited to 15mins 
-  const bid_end_dt_timestamp = new Date(created_dt_timestamp.getTime() + (15 * 60 * 1000));
+  const bid_end_dt_timestamp = new Date(created_dt_timestamp.getTime() + (1440 * 60 * 1000));
    
   const productRef = db.collection('products').doc(id);
   await productRef.set({
